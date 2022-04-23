@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct ToDoListView: View {
+    @EnvironmentObject var toDoStorage: ToDoStorage
+    
     var body: some View {
         NavigationView {
             List {
-                ForEach([ToDoItem(title: "Walk the dog", important: false), ToDoItem(title: "Buy pizza", important: true)]) { todo in
+                ForEach(self.toDoStorage.todos) { todo in
                     if todo.important {
                         Text(todo.title)
                             .bold()
@@ -24,10 +26,15 @@ struct ToDoListView: View {
                         Text(todo.title)
                     }
                 }
+                .onDelete(perform: { indexSet in
+                    if let index = indexSet.first {
+                        self.toDoStorage.todos.remove(at: index)
+                    }
+                })
             }
             .navigationTitle("Todo")
             .toolbar(content: {
-                NavigationLink(destination: ToDoListView(), label: {
+                NavigationLink(destination: CreateToDo(), label: {
                     Text("Add")
                 })
             })
@@ -37,6 +44,6 @@ struct ToDoListView: View {
 
 struct ToDoListView_Previews: PreviewProvider {
     static var previews: some View {
-        ToDoListView()
+        ToDoListView().environmentObject(ToDoStorage())
     }
 }

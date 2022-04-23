@@ -12,6 +12,7 @@
 		1EEDD9162813669C0029DA87 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEDD9152813669C0029DA87 /* Assets.xcassets */; };
 		1EEDD9192813669C0029DA87 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EEDD9182813669C0029DA87 /* Preview Assets.xcassets */; };
 		1EEDD920281375180029DA87 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEDD91F281375180029DA87 /* ToDoItem.swift */; };
+		1EEDD922281490110029DA87 /* CreateToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EEDD921281490110029DA87 /* CreateToDo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1EEDD9152813669C0029DA87 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EEDD9182813669C0029DA87 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1EEDD91F281375180029DA87 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		1EEDD921281490110029DA87 /* CreateToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateToDo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				1EEDD911281366990029DA87 /* ToDoAppApp.swift */,
 				1EEDD913281366990029DA87 /* ToDoListView.swift */,
+				1EEDD921281490110029DA87 /* CreateToDo.swift */,
 				1EEDD91F281375180029DA87 /* ToDoItem.swift */,
 				1EEDD9152813669C0029DA87 /* Assets.xcassets */,
 				1EEDD9172813669C0029DA87 /* Preview Content */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1EEDD914281366990029DA87 /* ToDoListView.swift in Sources */,
+				1EEDD922281490110029DA87 /* CreateToDo.swift in Sources */,
 				1EEDD912281366990029DA87 /* ToDoAppApp.swift in Sources */,
 				1EEDD920281375180029DA87 /* ToDoItem.swift in Sources */,
 			);
